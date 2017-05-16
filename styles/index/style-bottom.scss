@@ -1,0 +1,279 @@
+@import "../general/variables";
+.sandwich {
+  height: 920px;
+  background-color: #f3f1e9;
+}
+.sandwich-title {
+  text-align: center;
+  position: absolute;
+  z-index: 25;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top:95px;
+  &:before {
+    content: '';
+    z-index: -1;
+    background-image: url('../../assets/sandwich/windmill.png');
+    -webkit-background-size:100%;
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:105px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:-85px;
+  }
+  h2 {
+    margin: 0;
+    font-family:$alegreya;
+    font-weight: bold;
+    font-size: 48px;
+    color: #56534c;
+  }
+  h4 {
+    margin: 0;
+    font-family:$alegreya;
+    font-weight: bold;
+    font-size: 14px;
+    color: #a47d5e;
+  }
+}
+.sandwich-left {
+  margin-top:105px;
+  display: inline-block;
+  float: left;
+
+}
+.sandwich-ingredient {
+  text-align: center;
+  display: block;
+  margin-top:55px;
+}
+.ingredient-photo {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  -webkit-background-size:100%;
+  background-size:100%;
+  background-repeat:no-repeat;
+  border-radius: 50%;
+}
+.ingredient-first {
+  background-image: url('../../assets/sandwich/image1.jpg');
+}
+.ingredient-second {
+  background-image: url('../../assets/sandwich/image2.jpg');
+}
+.ingredient-third {
+  background-image: url('../../assets/sandwich/image3.jpg');
+}
+.ingredient-title {
+  margin-top: 25px;
+  font-family:$alegreya;
+  font-weight: bold;
+  font-size: 30px;
+  color: #a47d5e;
+}
+.ingredient-text {
+  margin-top:20px;
+  line-height:1.25;
+  letter-spacing: 1px;
+  font-family:$proxima;
+  font-size: 14px;
+  color: #56534c;
+}
+.sandwich-right {
+  margin:250px 0 0 140px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 840px;
+  height: 560px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(151,146,133,0.5);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(151,146,133,0.5);
+  box-shadow: 0px 10px 10px 0px rgba(151,146,133,0.5);
+  button {
+    font-family:$alegreya;
+    font-weight: bold;
+    font-size: 18px;
+    color: #dfc691;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border: 1px dashed #dfc691;
+    position: absolute;
+    bottom: -20px;
+    left:-20px;
+    z-index: 5;
+    cursor: pointer;
+  }
+}
+.sandwich-image {
+  width: 840px;
+  background-image: url('../../assets/sandwich/placeholder.jpg');
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height: 560px;
+  z-index: 0;
+  outline: 10px solid white;
+}
+.sandwich-time {
+  width: 200px;
+  z-index: 5;
+  height: 200px;
+  text-align: center;
+  .sandwich-time-title {
+    margin-top: 50px;
+    font-family:$alegreya;
+    font-weight: bold;
+    letter-spacing:1px;
+    font-size: 18px;
+    color: #a47d5e;
+  }
+  .sandwich-time-value {
+    font-size:60px;
+    color: #56534c;
+    font-family:$alegreya;
+    font-weight: bold;
+  }
+  >span {
+    display: block;
+    font-family:$alegreya;
+    font-weight:bold;
+    color: #979285;
+    font-size: 18px;
+  }
+}
+.time-frist {
+  position: absolute;
+  top: -20px;
+  right:0;
+  z-index: 5;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    content: '';
+    background-color: #f9f9f9;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+.time-second {
+  position: absolute;
+  top: 180px;
+  right:0;
+  z-index: 5;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    content: '';
+    background-color: #f9f9f9;
+    opacity: 0.8;
+    z-index: -1;
+  }
+}
+.time-third {
+  .sandwich-time-value {
+    color: #dfc691;
+    font-size:92px;
+  }
+  position: absolute;
+  top: 380px;
+  right:0;
+  z-index: 5;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(151,146,133,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(151,146,133,0.5);
+  box-shadow: 0px 5px 5px 0px rgba(151,146,133,0.5);
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    content: '';
+    background-color: #f9f9f9;
+    background-image: url('../../assets/tasty-pancakes/Vektor-Smartobjekt.png');
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity: 0.58;
+    z-index: -1;
+  }
+}
+
+.footer {
+  height: 240px;
+  background-color: #f3f1e9;
+  text-align: center;
+  p {
+    font-size:14px;
+    margin: 40px 0 0 0;
+    color: #56534c;
+    a {
+      color: #56534c;
+    }
+  }
+}
+.footer-content {
+  display: inline-block;
+  margin-top:100px;
+  height: 70px;
+  line-height: 70px;
+  >span {
+    margin: 0 40px 0 40px;
+    color: #56534c;
+    display: inline-block;
+    font-family: $scriptina;
+    font-size:30px;
+    line-height: 70px;
+  }
+}
+.footer-left,.footer-right {
+  display: inline-block;
+  height: 70px;
+  border-top:1px solid #c2beba;
+  border-bottom: 1px solid #c2beba;
+  ul {
+    padding: 0;
+    list-style: none;
+    line-height: 70px;
+    font-size: 14px;
+    font-family: $alegreya;
+    letter-spacing:5px;
+    color: #56534c;
+  }
+  li {
+    cursor: pointer;
+    display: inline-block;
+    &:first-child {
+      padding-left:40px;
+    }
+    &:last-child {
+      padding-right:40px;
+    }
+    &:not(:last-child){
+      &:after {
+        color: #56534c;
+        content: '~';
+        display: inline-block;
+        margin: 0 35px 0 35px;
+      }
+    }
+    > a {
+      text-decoration: none;
+      color: #56534c;
+    }
+  }
+}
+

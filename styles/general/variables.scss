@@ -1,0 +1,13 @@
+$alegreya: 'Alegreya';
+$playFair: 'Playfair Display';
+$scriptina: 'Conv_scriptina';
+$proxima: 'Proxima Nova';
+
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
